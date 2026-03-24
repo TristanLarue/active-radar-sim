@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\active-radar-sim.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\active-radar-sim.dir/objects.a @CMakeFiles\active-radar-sim.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\active-radar-sim.dir/objects.a -Wl,--no-whole-archive -o active-radar-sim.exe -Wl,--out-implib,libactive-radar-sim.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\active-radar-sim.dir\linkLibs.rsp

@@ -2,7 +2,6 @@
 // - FULL C++ IMPLEMENTATION FOR FASTER EPOCHS: Final goal is 1 epoch per 10ms at 24hz with 40 seconds of "realtime" simulation.
 // - Radar waves & signature including full SAM sites behavior with ground radar wave decluttering and missile communication
 // - Full mesh interactivity (pre-rendered CFD with LUT, dynamic radar waves signature). CFD will be library based, radar waves will be fully hand built
-// - PERLIN NOISE TERRAIN: will be calculated in collision detection and radar waves obstruction. Will be fully hand built for fun
 // - General wind, applied to all entities
 // - More general & modular entity dynamics in order for every aircraft/missiles/drones to work properly
 // - FULL ENTITY PERSPECTIVE SYSTEM: No more cheating with target_entity.position. Each entity must use their radar to properly detect & track a target
