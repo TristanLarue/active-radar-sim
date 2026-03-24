@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake: Configure",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S",
+        "${workspaceFolder}",
+        "-B",
+        "${workspaceFolder}/build-mingw",
+        "-G",
+        "MinGW Makefiles",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DCMAKE_C_COMPILER=C:/msys64/ucrt64/bin/gcc.exe",
+        "-DCMAKE_CXX_COMPILER=C:/msys64/ucrt64/bin/g++.exe",
+        "-DCMAKE_PREFIX_PATH=C:/msys64/ucrt64"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "CMake: Build (Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "--build",
+        "${workspaceFolder}/build-mingw",
+        "--target",
+        "active-radar-sim",
+        "-j",
+        "8"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": "CMake: Configure",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}
